@@ -9,4 +9,4 @@ n3 = str(input("Terceiro nome: "))
 n4 = str(input("Quarto nome: "))
 lista = [n1, n2, n3 , n4]
 random.shuffle(lista)
-print("A ordem de apresentação será {}".format(lista))
+print("A ordem de apresentação será {}".format(lista)) 

@@ -1,19 +1,34 @@
 '''
+Desafio 39
 Faça um programa que leia o ano de nascimento de um jovem 
 e informe, de acordo com a sua idade, se ele ainda vai se alistar ao serviço militar, 
 se é a hora exata de se alistar ou se já passou do tempo do alistamento. 
 Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
+Dica: verificar se o sexo é feminino ou masculino, pois o alistamento no Brasil é obrigatório apenas para homens.
 '''
-nascimento = int(input("Em que ano você nasceu? "))
-anoatual= 2022
-idade = anoatual - nascimento
-alistamento = 18
-tempo = 18 - idade
-print("Sua idade é {}".format(idade))
-if idade == 18:
-    print("Está na hora de fazer seu alistamento militar!")
-elif idade < 18:
-    print("Você não tem idade suficiente para se alistar!")
-    print("Faltam {} ano(s) para o seu alistamento! Se liga!".format(tempo))
+from datetime import date
+from re import M
+atual = date.today().year #para pegar o ano atual
+nasc = int(input('Ano de nascimento:'))
+idade = atual - nasc
+sexo = str(input('Qual o seu sexo? (F) Feminino ou (M) Masculino? '))
+if sexo == 'M':
+    print('Pessoas do sexo MASCULINO são obrigadas a se alistar!')
+    print('Quem nasceu em {}, tem {} anos.'.format(nasc, idade, atual))
+    if idade == 18:
+        print('Você tem que se alistar IMEDIATAMENTE!')
+    elif idade < 18:
+        saldo = 18 - idade
+        print('Você ainda não tem idade suficiente para se alistar! Ainda faltam {} anos para o seu alisatamento.'.format(saldo))
+        ano = atual + saldo
+        print('Seu alistamento será em {}'.format(ano))
+    elif idade > 18:    
+        saldo = idade - 18
+        print('Você já deveria ter se alistado há {} anos!'. format(saldo))
+        ano = atual - saldo
+        print('Seu alistamento foi em {}.'.format(ano))
+elif sexo == 'F':
+    print('Pessoas do sexo FEMININO não são obrigadas a se alistar!')
 else:
-    print("Já passou o tempo de você se alistar... Que pena!")
+    print('Opção inválida!')
+

@@ -10,5 +10,5 @@ if vel > 80:
     multa = (vel-80) * 7
     print("Sua multa é de R${:.2f}".format(multa))
 else:
-    print("Você está dentro dos limites de velocidade! Siga em frente :)")
+    print("Você está dentro dos limites de velocidade! Siga em frente :)") 
     

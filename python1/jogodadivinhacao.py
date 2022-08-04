@@ -16,5 +16,5 @@ sleep(2)
 if jogador == comp:
     print("Parabéns! Você conseguiu me vencer!")
 else:
-    print("Ganhei! Eu pensei no número {} e não no número {}!".format(comp, jogador))   
+    print("Ganhei! Eu pensei no número {} e não no número {}!".format(comp, jogador))
     

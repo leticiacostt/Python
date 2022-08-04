@@ -1,4 +1,5 @@
 '''
+DESAFIO 43
  Desenvolva uma lógica que leia o peso e a altura de uma pessoa, 
  calcule seu Índice de Massa Corporal (IMC) 
  e mostre seu status, de acordo com a tabela abaixo:
@@ -8,17 +9,17 @@
 – 30 até 40: Obesidade
 – Acima de 40: Obesidade Mórbida
 '''
-peso = float(input("Qual o seu peso? "))
-altura = float(input("Qual a sua altura? "))
-imc = peso/(altura**2)
-print("Com o seu peso sendo {:.2f} e sua altura sendo {:.2f}, seu índice de massa corporal será {:.2f}".format(peso, altura, imc))
-if imc <18.5:
-    print("Você está abaixo do PESO IDEAL")
-elif imc == 18.5 and imc <= 25:
-    print("Você está no PESO IDEAL")
-elif imc <= 30:
-    print("Você está com SOBREPESO")
-elif imc <= 40:
-    print("Você está com OBESIDADE")
+peso = float(input('Qual o seu peso? (kg) '))
+altura = float(input('Qual a sua altura? (m) '))
+imc = peso /(altura ** 2)
+print( 'O imc dessa pessoa é de {:.2f}'.format(imc))
+if imc < 18.5:
+    print('ABAIXO DO PESO!')
+elif imc >= 18.5 and imc <= 25:
+    print('PESO IDEAL')
+elif imc >= 25 and imc <= 30:
+    print('SOBRE ')
+elif imc >= 30 and imc <= 40:
+    print('OBESIDADE')
 elif imc > 40:
-    print("Você está com OBESIDADE MÓRBIDA")
+    print('OBESIDADE MÓRBIDA')

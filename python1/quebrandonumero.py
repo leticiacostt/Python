@@ -6,4 +6,4 @@ import math
 num = float(input("Digite um número: "))
 #int = math.trunc(num) ou
 #print("A valor digitado foi {} e a sua porção inteira é {}".format(num, int))
-print("A valor digitado foi {} e a sua porção inteira é {}".format(num, math.trunc(num)))
+print("A valor digitado foi {} e a sua porção inteira é {}".format(num, math.trunc(num))) 

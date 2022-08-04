@@ -3,4 +3,4 @@ if nome == "Leticia":
     print("Que nome lindo você tem!")
 else:
     print("Seu nome é tão normal!")
-print("Bom dia, {}".format(nome))
+print("Bom dia, {}".format(nome)) 

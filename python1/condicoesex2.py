@@ -5,5 +5,5 @@ print("A sua mé dia foi {:.2f}".format(m))
 if m >= 6.0:
     print("Sua média foi boa! Parabéns!")
 else:
-    print("Sua média foi ruim! Estude mais!")
+    print("Sua média foi ruim! Estude mais!") 
     

@@ -9,4 +9,4 @@ if salario <= 1250:
     print("O salário era de R${:.2f}, agora é de R${}".format(salario, aumento))
 else:
     aumento = salario + (salario * (10/100))
-    print("O salário era de R${:.2f}, agora é de R$ {:.2f}".format(salario, aumento))
+    print("O salário era de R${:.2f}, agora é de R$ {:.2f}".format(salario, aumento)) 

@@ -11,5 +11,5 @@ if distancia <= 200:
 else:
    preco = 0.45
    passagem = preco*distancia
-   print("O preço da passagem é de R${:.2f}".format(passagem))
+   print("O preço da passagem é de R${:.2f}".format(passagem)) 
    
