@@ -7,4 +7,4 @@ print(10*'=-', 'A CONTAGEM REGRESSIVA VAI COMEÇAR!', 10* '=-')
 for c in range (10, -1, -1): #COLOCAR -1 PRA CONTAR ATÉ 0
     print(c)
     sleep(1)
-print('BOM! BOM! POOOW!!')
+print('BOM! BOM! POOOW!!') 

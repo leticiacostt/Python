@@ -3,4 +3,4 @@ Crie um programa que mostre na tela todos os números pares que estão no interv
 '''
 for c in range(0, 51, 2):
     print(c, '.', end=' ')
-print('ACABOU')
+print('ACABOU') 
